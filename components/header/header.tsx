@@ -2,7 +2,7 @@ import Navigation from "./navigation";
 import Button from "@/custom/button";
 export default function Header() {
   return (
-    <header className="w-2/3 text-gray-50  min-h-12 mx-auto flex justify-between items-center px-2 uppercase py-5">
+    <header className="w-2/3 text-gray-50   min-h-12 mx-auto flex justify-between items-center px-2 uppercase py-5">
       <div className="flex items-center gap-12">
         <h1 className="font-semibold text-2xl">Hyper Movies</h1>
         <Navigation />
