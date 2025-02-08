@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
+import background from "../images/poster-background.jpg";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -25,7 +25,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased h-screen overflow-hidden flex flex-col bg-slate-800`}
+        style={{ backgroundImage: `url(${background.src})` }}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased h-screen overflow-hidden flex flex-col bg-slate-800 bg-cover bg-center bg-no-repeat  backdrop-filter backdrop-blur-sm backdrop-brightness-50`}
       >
         {children}
       </body>
